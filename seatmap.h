@@ -109,6 +109,7 @@ void deleteSeatMap(seatMap** seats)
 seatMap* createSeatMap(int rows, int cols)
 {
     seatMap* newSeats = malloc(sizeof(seatMap));
+    newSeats->seatArr = NULL;
     initSeatsData(newSeats, rows, cols);
 
     return newSeats;
